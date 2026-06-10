@@ -6,7 +6,7 @@ A BBC News-inspired mobile news application built with **React Native** and **Ex
 
 ## 📱 Screenshots
 
-![Hero News Screen](./screenshootheronews.png)
+![Hero News Screen](./ss.png)
 
 ---
 
