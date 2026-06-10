@@ -126,10 +126,7 @@ npm install react-native-safe-area-context react-native-vector-icons
 
 ## 👤 Author
 
-**Emre**
-- React Native Developer
-- [GitHub](https://github.com/yourusername)
-- [LinkedIn](https://linkedin.com/in/yourusername)
+**Emre EDEMİR**
 
 ---
 
