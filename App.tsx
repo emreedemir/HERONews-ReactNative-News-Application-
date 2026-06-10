@@ -1,20 +1,28 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { DrawerNavigator } from './drawer/DrawerNavigator';
+import ViewNewsSection from './screens/ViewNewsScreen';
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="Drawer" component={DrawerNavigator} />
+        <Stack.Screen
+          name="ViewNews"
+          component={ViewNewsSection}
+          options={{
+            headerShown: true,
+            headerStyle: { backgroundColor: '#1a3a6b' },
+            headerTintColor: '#ffffff',
+            headerTitle: '',
+            headerBackTitle:''
+          }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
